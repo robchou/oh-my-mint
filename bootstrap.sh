@@ -95,6 +95,7 @@ setup_spf13() {
     echo let g:spf13_bundle_groups=[\'general\', \'neocomple\'] > .vimrc.before.fork
     echo let g:airline_powerline_fonts = 1 > ~/.vimrc.before.local
     echo Bundle \'godlygeek/tabular\' > ~/.vimrc.bundles.local
+    echo Bundle '\scrooloose/nerdcommenter\' >> ~/.vimrc.bundles.local
 
     curl https://j.mp/spf13-vim3 -L -o - | sh
 }
